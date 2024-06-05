@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\hwApril1.Data\hwApril1.Data.csproj" />
+    <ProjectReference Include="..\hwApril1.Data\QASite.Data.csproj" />
 	  <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
 
   </ItemGroup>
