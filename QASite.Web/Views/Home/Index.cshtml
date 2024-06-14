@@ -1,0 +1,30 @@
+﻿@model HomeViewModel
+
+<div class="row">
+    <div class="col-md-8 offset-md-2" style="margin-top:40px">
+        @foreach (var question in Model.Questions)
+        {
+            <div class="card card-body bg-light">
+                <h4>
+                    <a href="/questions/viewquestion?id=@question.Id">
+                        @question.Title
+                    </a>
+                </h4>
+                <div>
+                    <span>Tags:</span>
+                    @foreach (var qt in question.QuestionTags)
+                    {
+                        <a href="/questions/viewfortag?tagname=@qt.Tag.Name">
+                        <span class="badge bg-primary">@qt.Tag.Name</span>
+                        </a>
+                    }
+                </div>
+                <div style="margin-top: 10px;">
+                    @question.Text
+                </div>
+                <br />
+                <span>@question.Answers.Count answer@(question.Answers.Count == 1 ? "" : "s")</span>
+            </div>
+        }
+    </div>
+</div>

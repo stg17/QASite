@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\hwApril1.Data\QASite.Data.csproj" />
+	  <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+
+  </ItemGroup>
+
+</Project>
